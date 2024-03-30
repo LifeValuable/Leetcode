@@ -1,4 +1,4 @@
-package trees
+package arrays
 
 import (
 	"sort"
@@ -24,7 +24,7 @@ func SortString(s string) string {
 	return string(r)
 }
 
-func groupAnagrams(strs []string) [][]string {
+func GroupAnagrams(strs []string) [][]string {
 	groups := make(map[string][]string)
 	for _, str := range strs {
 		sorted_str := SortString(str)
