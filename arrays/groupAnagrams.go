@@ -30,7 +30,7 @@ func GroupAnagrams(strs []string) [][]string {
 		sorted_str := SortString(str)
 		groups[sorted_str] = append(groups[sorted_str], str)
 	}
-	result := make([][]string, len(groups))
+	result := make([][]string, 0, len(groups))
 	for _, arr := range groups {
 		if len(arr) > 0 {
 			result = append(result, arr)
